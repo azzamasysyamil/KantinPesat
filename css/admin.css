@@ -1,0 +1,598 @@
+/*
+    Author: Azzam;
+    Theme:Food Order Website Admin;
+    Version: 1.0;
+*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0085d0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.order-box{
+    background-color: white;
+    margin: 5%;
+    padding: 4%;
+    border-radius: 20px;
+}
+
+.order-box h1 {
+    color: #13133d !important;text-align: center;
+}
+
+.order-box img {
+    border-radius:10px;
+}
+
+.order-box span.iii b {
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    outline: none;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 100%;
+    display:block;
+}
+
+.order-box span.iii {
+    background-color: #f2f1ee;
+    display: block;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper3 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper2 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.con-head {
+    width: 100%;
+    padding: 3% 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.tbl-30 {
+    width: 30%;
+    border-collapse: collapse;
+    margin: auto; 
+
+}
+
+.tbl-30 tr th {
+    padding: 10px;
+    text-align: center;
+}
+
+.tbl-30 tr td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tbl-full {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing:0 10px;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.tbl-full tr th {
+    padding: 15px;
+    text-align: left;
+    background: #fff;
+}
+
+
+.tbl-full tr td {
+    padding: 15px;
+    text-align: left;
+    background: #fff;
+}
+
+.btn-primary {
+    background-color: #ffcd36;
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color:#070707;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e4942c;
+    color:#070707;
+}
+
+.btn-secondary {
+    background-color: #39d433;
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #2e8519;
+    color:white;
+}
+
+.btn-danger {
+    background-color: #d43333;
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #770d0d;
+    color:white;
+}
+
+.success {
+    color: #39d433;
+}
+
+.error {
+    color:#d43333;
+}
+
+/* CSS for Menu */
+
+a{
+    color: #0085d0;
+    text-decoration: none;
+}
+a:hover{
+    color: #3359c2;
+}
+
+.navbar a {
+    color: #0085d0 !important;
+    text-decoration: none;
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+    background-color: white;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* CSS for Main Content */
+.main-content {
+    background-color: #0085d0;
+    padding: 3% 0;
+}
+/* CSS for Footer */
+#content-wrap {    
+padding-bottom: 4rem; 
+}
+
+#footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+background-color: white;
+}
+
+#footer p {    
+padding:1%;
+background-color: white;
+}
+
+.sticky {    
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+#file-input {
+    width: 100px;
+    overflow: hidden;
+  }
+
+/* CSS for login */
+input[type=text], input[type=number], input[type=password], select {
+    background-color: #f2f1ee;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    outline: none;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type=file] {
+    margin-bottom: 3%;
+    font-size: 1rem;
+}
+
+select {    
+    height: 40px;
+}
+
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+
+.food-search input[type="search"]{
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.food-search{
+    padding: 10% 0;
+}
+
+.order{
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.order h4 {
+    margin-bottom: 2%;
+}
+
+textarea {
+    background-color: #f2f1ee;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    width: 100%;
+    padding-top:1%;
+    resize: vertical;
+    margin-bottom: 3%;
+    line-height: 40px;
+    font-size:1em;
+}
+
+.btn-order2 {
+    padding:8px 16px;
+    background-color: #0085d0;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px !important;
+}
+
+.btn{
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top:25px !important;
+}
+
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    font-size: 1rem;
+    outline:none;
+}
+
+textarea.input-responsive {
+    width: 100%;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    display: block;
+    background-color: #f2f1ee99;
+    border: 1px solid #0f0f0f1a;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+    outline: none;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile + label * {
+	pointer-events: none;
+}
+
+.input-login {    
+    padding: 1%;
+}
+
+body:has(.login)
+{
+    background-color: #3359c2;
+}
+
+.btn-primary2 {  
+    padding:8px 16px;
+    background-color: #0085d0;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.btn-primary2:hover{
+    color: #ffffff;
+    background-color: #193fa8;
+    transition: 0.5s;
+}
+
+
+.tbl-full tr th {
+    background-color: #ffcd36 !important;
+}
+
+.main-content h1 {
+    color: white;
+    text-align: center;
+}
+
+.bbb h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.ccc {
+    color: #070707 !important;
+}
+
+
+.tbl-rsp {    
+    overflow-x:auto;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.input-container label {
+    width: 50%;
+}
+
+.inputkrn {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+} /* this keeps the input accessible. Don't just display: none */
+
+input:checked + span {
+  background-color: #0085d0;
+  color: #fff;
+}
+
+label span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-right: 0;
+  background-color: #f2f1ee;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+select:required:invalid {
+  color: #8e8e8e !important;
+}
+option[value=""][disabled] {
+  display: none !important;
+}
+option {
+  color: #000;
+}
+
+
+.number-input {
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: inline-flex;
+    }
+    
+    .number-input,
+    .number-input * {
+    box-sizing: border-box;
+    }
+    
+    .number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    border-radius:50%;
+    }
+    
+    .number-input button:before,
+    .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: #212121;
+    transform: translate(-50%, -50%);
+    }
+    .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 3rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    border: 0px;
+    text-align: center;
+    outline: none;
+    }
+
+    input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    }
+
+@media only screen and (max-width:812px){
+    .container {
+        width: 90%;
+    }
+    .login {
+        width: 90%;
+        padding: 2% ;
+        border-radius: 20px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .col-4 {
+        width: 90%;
+        background-color: white;
+        margin: 1%;
+        padding:2%;
+        float: left;
+        border-radius: 5px;
+    }
+    .order {
+        width: 100%;
+    }
+    .btn-secondary, .btn-danger, .btn-primary {        
+        display: block !important;
+        white-space: nowrap !important;
+        margin-bottom: 10px !important;
+        text-align: center;
+    }
+    br.iii {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:4000px) and (min-width:813px){
+    .login {
+        width: 20%;
+        padding: 2% ;
+        border-radius: 20px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .col-4 {
+        width: 18%;
+        background-color: white;
+        margin: 1%;
+        padding:2%;
+        float: left;
+        border-radius: 5px;
+        word-wrap: break-word
+
+    }
+}
